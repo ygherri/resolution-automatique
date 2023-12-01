@@ -24,14 +24,14 @@
 .translate_md {
   transform: translateY(279px);
 }
-@media only screen and (min-width: 500px) and (max-width: 800px) {
+/* @media only screen and (min-width: 500px) and (max-width: 800px) {
   .translate_md {
     transform: translateY(-751px);
   }
   .left-28 {
     left: 28rem;
   }
-}
+} */
 @import url("https://p.typekit.net/p.css?s=1&k=lek0gfp&ht=tk&f=24349.24350.24351.24354.24355.24356.43311.43312&a=161392393&app=typekit&e=css");
 
 @font-face {
