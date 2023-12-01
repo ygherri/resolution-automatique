@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="css/input.css">
+    <link rel="stylesheet" href="https://use.typekit.net/lek0gfp.css"> 
+    <link rel="icon" type="image/x-icon" href="/src/images/icon-noir.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Résolution automatique</title>
+    <script
+      src="https://kit.fontawesome.com/d3833dcaa5.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <nav class="bg-white-400 p-4 text-black flex items-center md:justify-between md:mx-24 ">
+        <div>
+            <img src="images/LOGO_Full_Noir.svg" alt="Logo" width="180" height="180"/>
+        </div>
+      <div class="flex items-center ml-auto space-x-4 lg:hidden">
+            <button type="button" id="menuBtn" class="ml-2 rounded-md font-semibold focus:outline-none">
+                <i class="fa-solid fa-bars text-3xl"></i>
+            </button>
+        </div>
+        <div class="hidden lg:flex items-center space-x-4">
+            <a href="#">Qui sommes-nous ?</a>
+            <div class="h-6 bg-white"></div>
+            <a href="#">Blog</a>
+            <div class="h-10 bg-white"></div>
+            <a href="#">Contact</a>
+            <div class="h-10 bg-white"></div>
+            <a href="#" class="p-2 bg-green-400 ml-2 rounded-md font-semibold">Découvrir le jeu</a>
+        </div>
+    </nav>
+    
+    <div id="menuDropdown" class="hidden lg:hidden fixed inset-0 bg-custom-color  z-50 transition-opacity">
+        <div class="flex justify-between p-4">
+            <div>
+            <img src="/src/images/logo-full.svg" alt="Logo" width="180" height="180"/>
+        </div>
+            <button type="button" id="closeBtn" class="text-white">
+                <i class="fa-solid fa-xmark text-3xl"></i>
+            </button>
+        </div>
+        <div class="flex flex-col items-start ml-20 mt-20 leading-10 ">
+            <a href="#" class="block canada-type-gibson-normal-400 py-2 text-white text-2xl">Qui sommes-nous ?</a>
+            <a href="#" class="block canada-type-gibson-normal-400 py-2 text-white text-2xl">Blog</a>
+            <a href="#" class="block  canada-type-gibson-normal-400py-2 text-white mb-4 text-2xl">Contact</a>
+            <a href="#" class="block  canada-type-gibson-normal-400py-2 bg-green-400 rounded-md font-semibold text-[#192F48] py-2 px-5">Découvrir le jeu</a>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('menuBtn').addEventListener('click', function() {
+            document.getElementById('menuDropdown').classList.remove('hidden');
+        });
+    
+        document.getElementById('closeBtn').addEventListener('click', function() {
+            document.getElementById('menuDropdown').classList.add('hidden');
+        });
+    </script>
+    
+    <div class="relative mx-auto flex items-center bg-center rounded-3xl shadow-lg  w-11/12 mb-24" style="background-image: url('images/fond_en_tete.png'); background-size: cover; background-repeat: no-repeat;min-height: 600px; margin-top: 40px;">
+        <div class="container mx-auto p-4 text-center whitespace-pre-line relative md:mt-0 mt-[-100px] ">
+            <div class="absolute left-3/4 top-3/4 transform -translate-x-1/2 -translate-y-1/2 h-full w-1/2 bg-cover bg-center md:mt-0 mt-[140px]" style="background-image: url('images/Robot.svg'); background-size: 100% 100%; background-repeat: no-repeat;"></div>
+            <div class="flex flex-col items-start justify-center h-full ml-5 md:ml-10 md:text-center text-start"> 
+                <h1 class="md:text-5xl text-4xl text-[#192F48] canada-type-gibson-bold  md:mb-6 ml-15 ">Plus que des Digital Natives*</h1>
+                <h1 class="md:text-5xl text-4xl canada-type-gibson-bold text-[#192F48] mb-6 ml-15">des IA Natives.</h1>
+                <p class="text-black mb-0 ml-15 canada-type-gibson-normal-600">Décrypte les enjeux liés à la présence de l'IA dans ta vie</p>
+                <p class="text-black mb-8 ml-15 canada-type-gibson-normal-600">quotidienne. Prêt à tout comprendre ?</p>
+                <button class="text-black bg-green-400 ml-15 mb-4 rounded-md font-semibold px-6 py-4 flex items-center"> 
+                    <img src="/src/images/mouse.svg" alt="Icône Souris" class="w-5 h-5 mr-2" />
+                    <span class="h-5 text-[#192F48] canada-type-gibson-normal-600">Scroll pour découvrir</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-3 bg-white text-center w-11/12 mx-auto">    
+        <div class="bg-green-400 font-gibson p-4 rounded-3xl mb-4 h-[300px]  flex items-start">
+            <div class="w-4/5 mr-auto order-2" style="background-image: url('images/Main.png');transform: translate(16px, -6px);background-size: 80% 80%; background-repeat: no-repeat; background-position: right; min-height: 120%;min-width: 50%;border-radius: 60px;"></div>
+            <div class="w-1/2 order-1 text-left">
+                <h2 class="text-3xl md:text-6xl text-black canada-type-gibson-bold mb-2 mt-2">77% </h2>
+                <p class="text-black canada-type-gibson-normal  text-2xl mt-2">des appareils intègrent une IA</p>
+            </div>
+        </div>
+    
+        
+        <div class="col-span-1">
+            <div class="bg-blue-400 font-gibson p-4 rounded-3xl mb-4 h-[300px] flex flex-col items-center">
+                <div class="flex text-center mb-2 md:justify-center justify-start items-center mt-[10px]">
+                    <h2 class="text-3xl md:text-6xl text-white canada-type-gibson-bold mb-1">72% </h2>
+                    <p class="text-white canada-type-gibson-normal text-2xl  mb-2 w-1/2">Des étudiants qui utilisent ChatGPT</p>
+                </div>
+                <div class="w-full h-56 bg-[url('/src/images/groupe_enfants.svg')]" style=" background-size: 100% 100%; background-repeat: no-repeat; background-position: center;transform: translateY(16px);"></div>
+            </div>
+        </div>
+    
+        
+        <div class="col-span-1">
+            <div class="bg-custom-color font-gibson p-4 rounded-3xl mb-4 h-[300px] flex items-center relative">
+                <div class="w-full text-start mt-[-160px]">
+                    <h2 class="text-3xl md:text-6xl text-white canada-type-gibson-normal mb-2 mt-4 mt-[45px]">1/4</h2>
+                    <p class="text-white  canada-type-gibson-normal  text-3xl text-lg w-1/2">Des Français maîtrisent la notion d'IA</p>
+                </div>
+                <div class="absolute right-0 top-0 bottom-0" style="background-image: url('images/France_Graphe.svg'); background-size: 75% 75%; background-repeat: no-repeat; background-position: right center; width: 65%;"></div>
+            </div>
+        </div>
+    </div>
+     <div class="justify-center">
+            
+        </div>
+        <section class="bg-[#192F48] grid xl:grid-cols-3 grid-cols-1 p-8 my-12">
+            <div class=" md:bg-white bg-none rounded-2xl md:shadow-lg md:p-8 p-1 xl:mt-0 w-2/3  md:w-10/12 mx-auto lg:mb-0 mb-12 w-full">
+                <h3 class="uppercase text-[#4A9DFF] text-2xl canada-type-gibson-normal">Vidéo</h3>
+                <h2 class="md:text-[#192F48] text-white md:text-4xl text-2xl canada-type-gibson-bold md:py-10 pb-10 pt-4 md:w-full w-4/5">Intelligent, mais pas drôle…</h2>
+                <p class="pb-8 md:text-[#192F48] text-white canada-type-gibson-normal-400">Vous utilisez probablement des intelligences artificielles tous les jours, mais avez-vous déjà vraiment réfléchi à leur impact ?</p>
+                <p class="pb-8 md:text-[#192F48] text-white canada-type-gibson-normal-400">Découvrez la révolution de l'intelligence artificielle dans notre nouvelle vidéo.</p>
+                <button class="text-black bg-green-400 ml-15 mb-4 rounded-md font-semibold px-6 py-4 flex items-center ">
+                    <img class="mr-2" src="/src/images/play.svg" alt="play">
+                    <span class="canada-type-gibson-medium ">Lancer la vidéo</span></button>
+            </div>
+            <div class="col-span-2 pr-0 md:pr-0 md:pr-12 md:ml-[-50px]">
+                <iframe width="90%" height="100%"  class="border-4 border-white rounded-xl shadow-lg md:h-[545px] md:w-10/12 w-[775px] w-full h-[250px] mx-auto" src="https://www.youtube.com/embed/5sNXjRE1C-U?si=llRiRB0Axxyuvvja" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section class="grid xl:grid-cols-3 grid-cols-1 w-11/12 mx-auto mb-32 md:5/6">
+            <div class="col-span-2 border-8 border-white rounded-2xl shadow-lg w-fit lg:mb-0 md:mb-12 md:block hidden">
+                <figure class="">
+                    <img src="/src/images/Serious_game.svg" class="rounded-2xl">
+
+                </figure>
+            </div>
+            
+            <div class="md:bg-[#F2F9FF] rounded-2xl md:shadow-lg py-8 px-7 xl:mt-0 lg:mt-12" style="width: 850px;
+    max-width: 100%;">
+                <h3 class="uppercase text-[#4A9DFF] text-2xl canada-type-gibson-normal">Serious game</h3>
+                <h2 class="canada-type-gibson-bold text-[#192F48] md:text-4xl text-2xl font-bold md:py-10 py-5">Décider ou déléguer ?</h2>
+                <p class="pb-8 canada-type-gibson-normal-400">Incarne un avatar dans un monde virtuel, navigue à travers divers scénarios du quotidien et prends des décisions cruciales.</p>
+                <p class="pb-8" canada-type-gibson-normal-400>Choisiras-tu d’utiliser une IA ou de faire confiance à tes propres décisions ?</p>
+                <button class="text-black bg-green-400 ml-15 mb-4 rounded-md font-semibold px-6 py-4 flex items-center">
+                    <img class="mr-2" src="/src/images/gamepad.svg" alt="gamepad">
+                    <span class="canada-type-gibson-medium ">Commencer l'aventure</span></button>
+            </div>
+            <div class="md:hidden">
+                <figure>
+                    <img src="/src/images/game.svg" alt="">
+                </figure>
+            </div>
+        </section>
+        <div class="titles my-12 text-center">
+                <h3 class="text-blue-500  uppercase canada-type-gibson-normal">Articles de blog</h3>
+                <h1 class="font-bold md:text-5xl text-3xl text-[#192F48] canada-type-gibson-bold ">L'avenir appartient aux esprits curieux</h1>
+                
+            </div>
+    <section>
+        <div class="relative hidden md:block">
+            <figure class="w-full mx-auto"><img src="/src/images/article-1.png" class="mx-auto" alt="article 1"></figure>
+            <div class="absolute grid grid-cols-1 gap-4 w-1/2 top-20 md:text-base md:top-12 lg:top-16 " style="left: 15%;">
+                
+                <div class="w-full">
+                    <h2 class=" w-11/12 text-3xl canada-type-gibson-normal mb-4 xl:text-4xl sm:text-2xl md:text-base lg:text-2xl md:mb-2">Comment l’intelligence artificielle redéfinit notre quotidien ?</h2>
+                    <p class="canada-type-gibson-normal-400 mb-4 md:text-xs lg:text-base md:mb-2 w-[57%]">L'émergence de l'intelligence artificielle a bouleversé notre quotidien, redéfinissant nos vies, nos jobs et nos interactions de manière inédite.</p>
+                    <div class="w-full">
+                    <button class="border-2 border-solid border-black rounded-xl p-3 xl:text-base lg:text-sm md:text-xs sm:text-xs xl:p-2 lg:p-1 md:p-2 ">
+                        <i class="fa-solid fa-caret-right"></i>
+                        <span class="canada-type-gibson-medium">En savoir plus</span></button>
+                </div>
+
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <section class="md:-mb-40">
+        <div class="relative hidden md:block">
+            <figure class="w-full mx-auto"><img src="/src/images/article-2.png" class="mx-auto" alt="article 2"></figure>
+            <div class="absolute grid grid-cols-2 gap-4 w-10/12 top-20 md:text-base md:top-12 lg:top-16">
+                <div> </div>
+                <div>
+                    <h2 class="text-3xl w-11/12 canada-type-gibson-normal mb-4 xl:text-4xl sm:text-2xl md:text-base lg:text-2xl md:mb-2">Quand l’intelligence artificielle façonne le futur de l’apprentissage.</h2>
+                    <p class="canada-type-gibson-normal-400 mb-4 md:text-xs lg:text-base md:mb-2 w-[62%]">L'éducation, telle que nous la connaissons, subit une transformation radicale sous l'influence croissante de l'intelligence artificielle (IA).</p>
+                    <div class="w-full">
+                    <button class="border-2 border-solid border-black rounded-xl p-3 xl:text-base lg:text-sm md:text-xs sm:text-xs xl:p-2 lg:p-1 md:p-2">
+                        <i class="fa-solid fa-caret-right"></i>
+                        <span class="canada-type-gibson-medium">En savoir plus</span></button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="relative flex overflow-x-auto mb-12 md:hidden h-[33rem] overflow-y-hidden">
+        <div class="bg-no-repeat flex-shrink-0 w-full h-[33rem] sm:-mb-24 sm:w-full sm:mr-14 sm:bg-full bg-[url('/src/images/article-1-res.png')]">
+            <div class="absolute top-20 w-2/3 md:w-1/3 l-10 left-14">
+                <h2 class="canada-type-gibson-normal text-base mb-3">Comment l’intelligence artificielle redéfinit notre quotidien ?</h2>
+                <p class="canada-type-gibson-normal-400 ext-xs mb-4">L'émergence de l'intelligence artificielle a bouleversé notre quotidien, redéfinissant nos vies, nos jobs et nos interactions de manière inédite.</p>
+                <div>
+                    <button class="border-2 border-solid border-black rounded-xl p-3 xl:text-base lg:text-sm md:text-xs sm:text-xs xl:p-2 lg:p-1 md:p-2">
+                        <i class="fa-solid fa-caret-right"></i>
+                        <span class="text-xs rounded canada-type-gibson-medium">En savoir plus</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="bg-no-repeat flex-shrink-0 w-full h-[33rem] sm:-mb-24 sm:w-full sm:mr-14 sm:bg-full bg-[url('/src/images/article-card-2.svg')]">
+            <div class="absolute top-20 w-1/2 l-30 ml-14 md:ml-0">
+                <h2 class="canada-type-gibson-normal text-base mb-3">Quand l’intelligence artificielle façonne le futur de l’apprentissage.</h2>
+                <p class="text-xs canada-type-gibson-normal-400 mb-5">L'éducation, telle que nous la connaissons, subit une transformation radicale sous l'influence croissante de l'intelligence artificielle (IA).</p>
+                <div>
+                    <button class="border-2 border-solid border-black rounded-xl p-3 xl:text-base lg:text-sm md:text-xs sm:text-xs xl:p-2 lg:p-1 md:p-2">
+                        <i class="fa-solid fa-caret-right"></i>
+                        <span class="text-xs rounded canada-type-gibson-medium">En savoir plus</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="flex flex-col items-center relative md:mb-0 margin_b" >
+        <div class="md:bg-[url('/src/images/Ebook_Newsletter.png')] bg-no-repeat bg-auto bg-cover bg-contain rounded-3xl mx-auto md:w-9/12 w-11/12 grid grid-cols-1 gap-4 md:grid-cols-2 md:relative z-10 md:translate-y-2/4	" >
+        <div>
+            <figure>
+                <img src="/src/images/Book-1.png" alt="livre">
+            </figure>
+        </div>
+        <div class="flex flex-col  h-full justify-center md:pr-12">
+            <h2 class="text-2xl text-[#D2E7FF] uppercase canada-type-gibson-normal mb-6">E-BOOK & NEWSLETTER</h2>
+            <h2 class="text-4xl text-white canada-type-gibson-bold mb-6">Rejoins-nous pour en découvrir plus.</h2>
+            <p class="text-white canada-type-gibson-normal-400 mb-8">Curieux d’en apprendre plus sur l’IA et les manières de l’utiliser modérément ? Inscris-toi à notre newsletter pour télécharger notre e-book exclusif !</p>
+            <div class="flex mt-8">
+            <input type="text" class="p-2 border border-gray-300 rounded md:rounded-l-md focus:outline-none focus:border-blue-500 md:mb-0 mb-5">
+            <button class="flex px-4 py-2 bg-[#43EC72] text-black rounded md:rounded-r-md h-10 items-center">
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <span class="canada-type-gibson-medium ">Je m'inscris</span></button>
+            </div>
+            <p class="text-white text-xs canada-type-gibson-normal-400 mt-3">En renseignant votre adresse e-mail, vous acceptez de recevoir la newsletter et vous reconnaissez avoir pris connaissance de notre politique de confidentialité.</p>
+        </div>
+    </div>
+    <div class="md:bg-[#D2E7FF] height_50 translate_resp md:translate-y-0 bg-custom-color md:h-96 w-full relative " ></div>
+    </section>
+    
+    <footer class="bg-custom-color  p-80-108 items-start gap-160">
+        <div class="grid grid-row-2 gap-4 pt-20  ">
+            <div class="grid grid-cols-1 lg:grid-cols-3 md:px-28 pl-16 pr-28 gap-4">
+                <figure class="mb-5 md:mb-0">
+                    <img src="/src/images/logo.svg" alt="logo">
+                </figure>
+                <div>
+                    <ul class="text-white">
+                        <li class="text-2xl canada-type-gibson-normal md:mb-6 mb-6">Réseaux sociaux</li>
+                        <li class="canada-type-gibson-medium md:mb-8 mb-6">Facebook</li>
+                        <li class="canada-type-gibson-medium md:mb-8 mb-6">Youtube</li>
+                        <li class="canada-type-gibson-medium md:mb-8 mb-6">Instagram</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="text-white">
+                        <li class="text-2xl canada-type-gibson-normal md:mb-6 mb-6" >Légal</li>
+                        <li class="canada-type-gibson-medium md:mb-8 mb-6">Mentions légales</li>
+                        <li class="canada-type-gibson-medium md:mb-8 mb-6">Politique de confidentialité</li>
+                        <li class="canada-type-gibson-medium md:mb-8 mb-6">Accessibilité</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex grid grid-cols-1 md:grid-cols-2 gap-16 items-center py-14 justify-end lg:ml-80">
+                <p class="text-white text-center canada-type-gibson-normal-400 sm:px-20 md:px-0">Copyright © 2023 Résolution Automatique. Tous droits réservés.</p>
+                <div class="flex items-center gap-5 text-start justify-center md:justify-start">
+                    <p class="text-white canada-type-gibson-normal-400">Powered by</p>
+                    <img src="/src/images/logo_shift.svg" alt="Logo shift" class="w-28 max-w-full">
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
